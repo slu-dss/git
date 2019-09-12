@@ -1,0 +1,115 @@
+\documentclass{tufte-handout}
+
+% set color attributes:
+\usepackage{xcolor}
+\definecolor{mygray}{HTML}{EDEDED}
+
+% set image attributes:
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+% set hyperlink attributes
+\hypersetup{colorlinks}
+
+% set code block attributes
+\usepackage{listings}   
+\lstset{
+  backgroundcolor=\color{mygray}
+}
+
+% create environment for bottom paragraph:
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
+
+% ========================================================
+
+% define the title
+\title{SLU DSS: Git \& GitHub}
+\author{Christopher Prener, Ph.D.}
+\date{\today}
+% =======================================================
+\begin{document}
+% =======================================================
+\maketitle % generates the title
+% =======================================================
+
+\section{Basic Workflow}
+\begin{fullwidth}
+\begin{figure}[!h]
+\includegraphics[scale=.68]{"git"}
+\end{figure}
+\end{fullwidth}
+
+% =======================================================
+
+\newpage
+\section{Basic Bash Commands}
+\begin{lstlisting}[frame=single] 
+$ cd [.]
+\end{lstlisting}
+Change working directory.
+
+\vspace{5mm}
+\section{Basic Git Commands}
+\begin{lstlisting}[frame=single] 
+$ git init [repo-name]
+\end{lstlisting}
+Creates a new local repository.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git clone [url]
+\end{lstlisting}
+Creates a new local repository with the specified name.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git status
+\end{lstlisting}
+List all new or modified files to be committed.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git add [-A] [file-name]
+\end{lstlisting}
+Snapshots (or ``stages'') the file (or all files with \texttt{-A}) for versioning.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git reset [file-name]
+\end{lstlisting}
+Unstage the file.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git commit -m "[message text]"
+\end{lstlisting}
+Records file snapshots permanently in version history.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git push [alias] [branch-name]
+\end{lstlisting}
+Upload all local changes to GitHub; the \texttt{alias} is typically \texttt{origin}.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git pull
+\end{lstlisting}
+Downloads history and updates repository.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git branch [branch-name]
+\end{lstlisting}
+Create a new branch.
+
+\vspace{3mm}
+\begin{lstlisting}[frame=single] 
+$ git checkout [branch-name]
+\end{lstlisting}
+Switch to the specified branch.
+
+
+\end{document}
+
+\end{document}
