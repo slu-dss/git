@@ -4,7 +4,7 @@
 [![](https://img.shields.io/github/last-commit/slu-dss/git.svg)](https://github.com/slu-dss/git/commits/master)
 
 ## Lesson Overview
-This repository contains the lesson materials used for the Git and GitHub brownbag.
+This repository contains the lesson materials used for the Git and GitHub brownbag. You can view the slides on [Speakerdeck](https://speakerdeck.com/chrisprener/git) or by downloading `docs/keynote-slides/git.pdf`.
 
 ### Lesson Objectives
 By the end of this lesson, learners should be able to:
