@@ -15,7 +15,7 @@ By the end of this lesson, learners should be able to:
 
 ### Software Used
 
-* [Atom](https://atom.io)
+* [Atom](https://atom.io) (optional, but highly recommended)
 * [Git](https://git-scm.com)
 * [GitHub](http://github.com)
 
